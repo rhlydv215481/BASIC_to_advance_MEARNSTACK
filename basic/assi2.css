@@ -1,0 +1,45 @@
+@font-face {
+    font-family:'hello';
+    src: url(./fonts/Berosong-Regular.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* height: 100%;
+    width: 100%; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+height: 100%;
+text-align: center;
+/* background-image: url(https://ufo3d.com/portfolio-item/car-3d-rendering-and-modeling-for-product-images/);  */
+background-image: url(https://www.bing.com/th/id/OIP.eE88egAqBG9ZnvEjXpy6ogHaLG?w=139&h=209&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2); 
+background-size: cover;
+background-position: center;
+}
+h1{
+     font-family: 'hello';
+     font-weight: 700;
+     font-style: italic;
+     font-size: 100px;
+    
+    padding-top: 10px;
+}
+button{
+    margin-top: 5px;
+      font-family: 'hello';
+     font-weight: 700;
+     font-style: italic;
+     font-size: 40px;
+     padding: 5px;
+     background-size: 50px;
+    background: orangered;
+    border: 5px solid;
+    border-radius: 10px;
+  
+}

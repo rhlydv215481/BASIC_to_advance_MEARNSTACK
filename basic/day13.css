@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'shariyan';
+    /* src: url(./fonts/BillionStars_PersonalUse.ttf); */
+    src: url(./fonts/helvetica-now-display.ttf);
+}
+@font-face {
+    font-family: 'brand';
+    src: url(./fonts/BillionStars_PersonalUse.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'shariyan';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    color: white;
+}
+#nav{
+    padding:10px 30px ;
+    display: flex;
+    /* → sab side */
+/* padding: 10px 30px; → top-bottom | left-right
+padding: 10px 30px 40px; → top | left-right | bottom
+padding: 10px 30px 40px 60px; → top | right | bottom | left */
+}
+#nav h3{
+    margin-left: 30%;
+    margin-right: 35%;
+    font-family: 'brand';
+    font-size: 40px;
+    /* position: absolute; */
+    /* left:50%; */
+}
+#nav a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-right: 25px;
+}
+#main>h1{
+    font-size:250px ;
+    font-weight: 700;
+    padding-left: 30px;
+}
+#left{
+    width: 300px;
+    position: absolute;
+    /* background: red; */
+    left: 25px;
+    margin-top: 5%;
+}
+#left h3{
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight:900;
+}
+
+#left h4{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#bottom h1{
+    position: absolute;
+    margin-top: 20px;
+    padding: 30px 25px;
+    bottom: 0%;
+    left: 0%;
+}
+#bottom>a{
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+#first{
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    right: 40%;
+}
+#secound{
+    height: 280px;
+    width: 280px;
+    position: absolute;
+    right: 10%;
+    /* top:350px ; */
+}
+#third{
+    height: 280px;
+    width: 300px;
+    position: absolute;
+    right: 25%;
+    top: 250px;
+    /* top:350px ; */
+}
