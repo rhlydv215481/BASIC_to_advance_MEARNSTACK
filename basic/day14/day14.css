@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'shariyan';
+    src: url(./fonts/helvetica-now-display.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family: 'apple';
+    src: url(./sf-pro-text_regular.woff2);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'apple';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: white;
+    
+}
+#nav{
+    height: 8%;
+    
+    width: 100%;
+    background: #1b263b;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    color: white; 
+}
+#nav>i{
+    font-size: 30px;
+    /* background-color:white ; */
+    border-radius: 45%;
+    /* color: ; */
+}
+#center{
+    font-family: 'apple';
+    height: 90%;
+    width: 100%;
+    background: #000; 
+      padding: 50px ;
+      padding-right: 60px;
+    font-weight: 100;
+    /* align-items: center; */
+    text-align: center;
+    background-image: url(https://www.apple.com/v/iphone-17-pro/d/images/overview/welcome/hero__bdntboqignj6_xlarge_2x.jpg);
+   
+background-repeat: no-repeat;      
+    background-size: cover;               
+    /* background-position: center; */
+    background-position:bottom  80%;
+   padding-top: 400px;
+}
+
+#center h1{ 
+    font-size: 60px;
+    color: white;
+    padding-top: 10px;
+    font-weight: 900;
+}
+#center h5{
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+}
+#button{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50PX;
+    /* padding: 10px; */
+
+}
+#button button{
+font-size: 20px;
+color: white;
+    
+    border-radius: 55px;
+    background: #047cf4;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+}
+#bechamai{
+    margin-top: 10px;
+    height: 70%;
+    width: 100%;
+    background: #000;
+    background-image: url(https://www.apple.com/in/home/heroes/iphone-family/images/hero_iphone_family__fuz5j2v5xx6y_largetall.jpg);
+    background-position: center 65%;
+    background-size: cover;
+    
+}
+#head h1{
+    /* color: white; */
+      /* text-transform: capitalize; */
+    font-family:  'apple';
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 30px  ;
+    padding-bottom: 0%;
+}
+#head p{
+    text-transform: capitalize;
+    text-align: center;
+    font-family:  'apple';
+    font-weight: 600;
+    font-size: 25px;
+    padding-bottom: 0%;
+    /* color: white; */
+}
+#button #shop{
+  background: transparent;
+  color: #047cf4;
+ border: 2px solid #047cf4; 
+}
+/* img{
+    height: 60%;
+} */

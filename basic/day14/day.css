@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'shariyan';
+    src: url(./fonts/helvetica-now-display.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'shariyan';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#parent{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  
+   background: #000;
+}
+
+
+#box2{
+    height: 150px;
+    width: 150px;
+    background: yellow;
+    color: #000;
+    
+}
+
+#box3{
+    height: 150px;
+    width: 150px;
+    background: green;
+}
+
+#box{
+    height: 150px;
+    width: 150px;
+    background: pink;
+}
