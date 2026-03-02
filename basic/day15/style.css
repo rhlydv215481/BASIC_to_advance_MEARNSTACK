@@ -1,0 +1,59 @@
+@font-face {
+    font-family:'shariyan';
+    src: url(./helvetica-now-display.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'shariyan';
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+} 
+#parent{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+#BOX{
+height: 300PX;
+width: 300PX;
+position: absolute;
+border: 2PX solid black;
+background-color: RED;
+left: 48%;
+top: 50%;
+z-index: 2;
+/* zindex se haam ye red ko upar lekar gaya black se  */
+}
+
+#BOX2{
+height: 300PX;
+width: 300PX;
+position: absolute;
+left: 50%;
+top: 50%;
+
+border: 2PX solid black;
+background: #000;
+}
+
+#BOX3{
+height: 100PX;
+width: 100PX;
+
+border: 2PX solid black;
+background: gray;
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+/* ye bo ko center mai kar deya ye formula hai  */
+position: absolute;
+transform: translateY(-50%);
+transform: translatex(-50%);
+/* ye elemt ka size ka hisab se move karta hai   */
+left: 50%;
+top: 40%;
+z-index: 5;
+}

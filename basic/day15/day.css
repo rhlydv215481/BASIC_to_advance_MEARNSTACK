@@ -1,0 +1,197 @@
+@font-face {
+    font-family:'shariyan';
+    src: url(./helvetica-now-display.ttf);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'shariyan';
+
+}
+html,body{
+    height: 110%;
+    width: 100%;
+} 
+#parent{
+    height: 100%;
+    width: 100%;
+    background: lightblue;
+display: flex;
+overflow: auto;
+flex-wrap: nowrap;
+scrollbar-width: none;
+}
+#box{
+  /* position: absolute; */
+  overflow: hidden;
+    width: 250px;
+    height: 350px;
+    background-color: whitesmoke ;
+    border: 5px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+flex-shrink: 0;
+  margin-bottom: 20px;
+ box-shadow: 10px 10px 20px red;
+  border-radius: 20px;
+  /* text-transform: capitalize; */
+}
+#box>img{
+  margin-top: 10%;
+  /* padding-top: 30px; */
+}
+#box h1{
+  text-align: center;
+}
+#box p{
+  /* display: flex; */
+  overflow: auto;
+  text-align: center;
+  scrollbar-width: none;
+  text-shadow: 4px 1px 20px #00B9E8;
+}
+
+#box2{
+    width: 150px;
+    height: 150px;
+    /* background: white; */
+    /* border: 5px whitesmoke solid; */
+    flex-shrink: 0;
+}
+#box3{
+    width: 150px;
+    height: 150px;
+    /* background: green; */
+    /* border: 5px whitesmoke solid; */
+    flex-shrink: 0;
+}
+#card
+{
+  transition: all 0.3s ease;
+    overflow:hidden;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    height: 380px;
+    width: 270px;
+    background: white;
+    border-radius: 20px;
+   display: flex;
+  justify-content: space-evenly; 
+    align-items: center;
+    /* text-shadow: 2px 5px 20px red; */
+  box-shadow: 50px 60px 20px black;
+  /* ye flex direction colum use huvaeda  */
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 20px;
+  }
+img{
+    /* position: absolute; */
+    position: relative;
+    /* position: fixed; */
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* transform: translateY(-100%); */
+  /*  ye img tab ka nader use kar rahai issa ;eya  ya tho bg cover use karta  */
+    object-fit:cover;
+  }
+  #card:hover{
+/* transform: translateY(-18px) scale(1.06); */
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  }
+  #card h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-shadow: 2px 5px 20px red;
+    /* overflow: auto; */
+    z-index: 2;
+    margin-bottom: 5px;
+  }
+  #card p{
+
+    /* display:; */
+   text-align: center;
+     text-shadow: 2px 5px 20px red;
+     overflow: auto;
+     scrollbar-width: none;
+      /* display: none;  */
+      /* margin: 8px 0; */
+  }
+  button{
+    /* display: flex; */
+    
+    background-color:#00B9E8;
+    border-radius: 20px;
+    padding: 10px 19px ;
+    font-size: 20px;
+    margin-top: 8px;
+    gap: 5px;
+    color: aliceblue;
+    border: 2px solid white;
+  }
+   button:hover{
+    background: transparent;
+    color: #00B9E8;
+    cursor: pointer;
+    border: 2px solid #00B9E8;
+  }
+  #card2
+{
+    overflow:hidden;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateX(-40%);
+    height: 350px;
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+   display: flex;
+  justify-content: space-evenly; 
+    align-items: center;
+    /* text-shadow: 2px 5px 20px red; */
+  box-shadow: 50px 60px 20px black;
+  /* ye flex direction colum use huvaeda  */
+  flex-direction: column;
+  padding: 10px;
+  padding-left: 20px;
+  }
+img{
+    /* position: absolute; */
+    position: relative;
+    /* position: fixed; */
+    padding-top: 10px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* transform: translateY(-100%); */
+  /*  ye img tab ka nader use kar rahai issa ;eya  ya tho bg cover use karta  */
+    object-fit:cover;
+  }
+  #card2 h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-shadow: 2px 5px 20px red;
+    /* overflow: auto; */
+    z-index: 2;
+    margin-bottom: 5px;
+  }
+  #card2 p{
+
+    /* display:; */
+   text-align: center;
+     text-shadow: 2px 5px 20px red;
+     overflow: auto;
+     scrollbar-width: none;
+      /* display: none;  */
+      /* margin: 8px 0; */
+  }
