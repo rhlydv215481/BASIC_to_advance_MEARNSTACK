@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+    display: flex;
+}
+#card{
+    margin: 20px;
+   position: relative;
+height: 350px;
+width: 350px;
+overflow: hidden;
+/* background: #000; */
+}
+#card img{
+/* position: absolute; */
+
+    height: 350px;
+width: 350px;
+object-fit: cover;
+object-position: center;
+}
+#button{
+    position:absolute;
+    height: 40%;
+    width: 100%;
+    /* background: #000; */
+    bottom: -40%;
+    background: linear-gradient(transparent,#4a4e69
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+
+#card:hover #button{
+    bottom: 0;
+   transition: all linear 3s;
+}
+.card2{
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    height: 350px;
+    width: 350px;
+    background: #000;
+      perspective: 200px;
+    
+}
+.card2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+      transition: all linear  4s;
+}
+#bottom{
+    height: 50%;
+    width: 100%;
+    background:linear-gradient(transparent,#ffbf69);
+    position: absolute;
+    bottom:-50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+      transition: all linear  4s;
+}
+.card2:hover img{
+    transform: rotatex(20deg);
+  
+}
+.card2:hover #bottom{
+    bottom: 0;
+    transform: rotateX(20deg);
+}
