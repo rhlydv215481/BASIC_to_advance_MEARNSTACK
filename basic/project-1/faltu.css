@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'apple';
+    /* font-size: 40px; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scrollbar-width: none;
+/* background: #000; */
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transition: all linear 0.3s;
+}
+h4:hover{
+    transform: rotateX(180deg);
+    color: aquamarine;
+}
