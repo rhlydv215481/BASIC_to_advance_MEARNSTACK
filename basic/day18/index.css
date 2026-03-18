@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+html,body{
+height: 100%;
+ width: 100%;
+/* background: #000; */ 
+}
+/* 
+.flex-container{
+height:100%;
+display:flex;
+
+justify-content:center;
+align-items:center;     
+
+gap:20px;
+}
+
+.box{
+height:120px;
+width:120px;
+background:orange;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+} */
+/* .grid-container{
+height:100%;
+
+display:grid;
+grid-template-columns:200px 200px;
+grid-template-rows:200px 200px;
+
+justify-content:center; 
+align-content:center;
+
+gap:20px;
+}
+
+.box{
+background:orange;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+} */
+ 
+/* .parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+    
+.div1 {
+    background: crimson;
+    grid-column: span 8 / span 8;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+    background: darkblue    ;
+}
+
+.div3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    background: crimson;
+}
+     .div5 {
+        background: green;
+    grid-column: span 6 / span 6;
+    grid-column-start: 3;
+    grid-row-start: 5;
+} */
+      
+main{
+     height: 100vh;
+    display: grid;
+    grid-template-rows: 90px 250px 1fr;
+    grid-template-columns: 350px 1fr ;
+    grid-gap: 10px;
+    grid-template-areas: "header header header"
+                            "aside  section section"
+                            "figure figure figure ";
+}
+header{
+    background: rebeccapurple;
+    grid-area: header;
+   
+}
+    section{
+        background: blue;
+     grid-area: section;
+    }
+ aside{
+    grid-area: aside;
+    background: #000;
+ }
+ figure{
+    grid-area: figure;
+    background-color: blanchedalmond;
+ }
