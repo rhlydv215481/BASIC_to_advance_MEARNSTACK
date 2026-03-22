@@ -1,0 +1,56 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-size: 40px; */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+main {
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section {
+  height: 50vh;
+  width: 50vw;
+  background: white;
+}
+main section h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px black;
+  margin: 30px;
+}
+main section button {
+  margin-left: 5vw;
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-size: 30px;
+  marzine: 20px 30px;
+  border: none;
+  background: yellow;
+}
+main section #first {
+  border-radius: 40px;
+  padding: 20px 30px;
+  font-size: 30px;
+  marzine: 20px 30px;
+  border: none;
+  background: green;
+}/*# sourceMappingURL=style.css.map */
