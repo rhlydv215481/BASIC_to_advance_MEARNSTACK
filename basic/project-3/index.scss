@@ -1,0 +1,521 @@
+@font-face {
+    font-family:'rahul' ;
+    src: url(https://cdn.prod.website-files.com/68e65d77fd19a20963758dbf/68e65d77fd19a20963758e26_Inter18pt-Medium.woff2);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+     box-sizing: border-box
+}
+html,body{
+     height: 100%;
+ width: 100%; 
+ font-size: clamp(14px,1vw,20px);
+ font-family: 'rahul';
+}
+@mixin flex{
+     display: flex;
+            flex-direction: column;
+}
+@mixin information{
+     width:100% ;
+    
+        margin: 0.8rem 0rem;
+        background:#dee2ff;
+        font-size: 0.9rem;
+        padding: 1rem;
+        border-radius:20px;
+        flex-shrink: 0;
+     
+        img{
+            width: 18%;
+        }
+        .upper{
+            display: flex;
+            flex-direction:row-reverse;
+            margin: 0rem auto;
+            justify-content: space-between;
+           
+           .colum{
+             display: flex;
+             gap: 0.8rem;
+             flex-direction: column;
+            
+           } 
+        }
+        .bottom{
+            font-size: 1.1rem;
+            font-weight: 590;
+            margin-top: 2rem;
+            line-height: 1.3;
+            
+        }
+
+}
+@mixin border {
+      @include photo;
+    border-bottom: none;
+    border-right: 2px solid rgb(34, 33, 33,0.2);
+    margin-right: 1.6rem;
+    padding-left:1rem;
+   
+   }
+@mixin box{
+
+       @include photo;
+             @include flex;
+            gap: 1.3rem;
+            img{
+                margin-bottom: 0.5rem;
+            }
+            h2{    
+                margin: 0.5rem 0rem;
+                font-size: 2.9rem;
+                font-weight: 600;
+            line-height: 1.1;
+            }
+            h3{
+                //  margin-top: 0.5rem ;
+                line-height: 0.5;
+                 font-weight: 100;
+                font-size: 1.4rem;             
+            }
+            p{
+                width: 60%;
+                margin: 1rem 0rem;
+            }
+              border-bottom: 2px solid rgb(34, 33, 33,0.2) ;
+        }
+
+@mixin photo{
+    img{
+                font-size: 2rem;
+                width: 12%;
+                padding: 0.5rem;
+                background: #dee2ff;
+                border-radius: 10px;
+                font-weight: 300;
+            }
+}
+main{
+     width: 100%;
+      @include flex;
+    section.view1{
+        width: 100%;
+        background-image: url(https://cdn.prod.website-files.com/68e65d77fd19a20963758dbf/68e65d77fd19a20963758e32_moneda-home-hero.avif);
+        background-size: cover;
+         background-position: center;
+          height: 100vh;
+          @include flex;
+        //    display: flex;
+        //     flex-direction: column;
+            justify-content: center;
+            padding:  0rem 1.3rem;
+            // align-items: center;
+        // position: relative;
+    // .top{
+    //     width: 100%;
+    //     img{
+    //         width: 100%;
+    //         // width: 50%;
+    //         object-fit: cover;
+    //         display: block;
+    //         height: 100vh;
+    //         // border-radius: 1.4rem;
+    //     }
+    // background: red;
+    
+        .bottom{
+            margin: auto 0; 
+            color: white;
+            font-size: 1.7rem;
+             @include flex;
+            // display: flex;
+            // flex-direction: column;
+            text-align: center;
+            h1{
+                line-height: 0.9;
+                margin-bottom: 0.5rem;
+                 transform: translateY(-1rem);
+                 border: center;
+            }
+            #line{
+                  text-decoration: line-through rgb(56, 190, 235) 9px ;
+            }
+        }
+        .last{
+            
+            color: white;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    transform: translateY(-1rem);
+    p{
+        line-height: 1.2;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+        
+        }
+}
+section.view2{
+    width: 100%;
+    @include flex;
+    align-items: center;
+    // padding: 0rem 1rem;
+     padding: 0rem 1.3rem;
+    // justify-content: center;
+    .top{
+        width: 100%;
+         @include flex;
+        //  justify-content: center;
+        align-items: center;
+    video{
+        width: 54%;
+        border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    }
+}
+.bottom{
+        @include flex;
+        font-size: 1.5rem;
+        text-align: center;
+    margin: 1.5rem 0rem;
+    line-height: 1.2;
+
+    }
+    }
+    .blank1{
+          width: 100%;
+//    background: #000;
+        height:12vh ;
+    }
+    .blank{
+        width: 100%;
+//    background: #000;
+        height:12vh ;
+    }
+    .blank1{
+        height: 29vh
+    }
+section.view3{
+    // height: 80vh;
+     @include flex;
+    //  position: relative;
+    padding: 0rem 1.3rem;
+    margin-bottom: 1rem;
+    #box{
+        // position: absolute;
+         @include flex;
+         align-items: center;
+        background: #000;
+        height: 82vh;
+        border-radius: 50px;
+        position: relative;
+        h2{
+            // margin: 5rem;
+            font-size: 1.3rem;
+            position: absolute;
+            top: 16%;
+            color: white;
+              transform: scaleY(0.8);
+        }
+    }
+}
+.blank2{
+        width: 100%;
+//    background: #000;
+        height:280vh ;
+    }
+    section.view4{
+        @include flex;
+        padding: 0rem 1.3rem;
+      h2{    
+                margin: 0.5rem 0rem;
+                font-size: 2.5rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            }
+        .box1{
+
+            @include photo;
+             @include flex;
+             @include box;
+            //  border-bottom: 2px solid rgb(34, 33, 33,0.2) ;
+            // gap: 1.3rem;
+            // img{
+            //     margin-bottom: 0.5rem;
+            // }
+            // h2{    
+            //     margin: 0.5rem 0rem;
+            //     font-size: 2.5rem;
+            // line-height: 1.1;
+            // }
+            // h3{
+            //     //  margin-top: 0.5rem ;
+            //     line-height: 0.5;
+            //      font-weight: 100;
+            //     font-size: 1.4rem;             
+            // }
+            // p{
+            //     width: 60%;
+            //     margin: 1rem 0rem;
+            // }
+        }
+        .box2{
+            margin: 1rem 0rem;
+            @include box;
+        }
+        .box3{
+             margin: 1rem 0rem;
+            @include box;
+        }
+        .box4{
+             margin: 1rem 0rem;
+            @include box;
+        }
+    }
+section.view5{
+    background-image: url(https://cdn.prod.website-files.com/68e65d77fd19a20963758dbf/68e65d77fd19a20963758ee4_grid.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 1.7rem;
+    @include flex;
+    align-items: center;
+    padding:1rem 1.3rem;
+    // gap: 0.8rem;
+  
+    .informationofemployee{
+        display: flex;
+        max-width: 100vmin;
+        padding: 0rem 1rem;
+        gap: 0.8rem;
+        overflow-x: auto;
+        .box1{
+          @include information ;
+        // width:100% ;
+        // margin: 0.8rem 0rem;
+        // background:#dee2ff;
+        // font-size: 0.9rem;
+        // padding: 1rem;
+        // border-radius:20px;
+        // img{
+        //     width: 18%;
+        // }
+        // .upper{
+        //     display: flex;
+        //     flex-direction:row-reverse;
+        //     margin: 0rem auto;
+        //     justify-content: space-between;
+        //    .colum{
+        //      display: flex;
+        //      gap: 0.8rem;
+        //      flex-direction: column;
+        //    } 
+        // }
+        // .bottom{
+        //     font-size: 1.1rem;
+        //     font-weight: 590;
+        //     margin-top: 2rem;
+        //     line-height: 1.3;
+            
+        // }
+     }
+     .box2{
+      
+        @include information ;
+     }
+     .box3{
+        @include information;
+     }
+     .box4{
+ @include information;
+     }
+}
+}
+}
+
+@media(min-width:1024px) {
+        main{
+        //  rahul tuja no bank and no board ek line horiizontal aur cte ussa ka necha ok 
+        // tho muja ye .bottom ko flex row kiya tho 3 noon ek sth mai aagay tho mai flex wrap kiya uss 
+        //  flex wrap : wrap Agar ek line me space nahi mila
+        // To items next line me chale jate hain  
+        // tho width 100% kardeya centre tho bhara gaya tho vo necha aagay
+            section.view1{
+               display: flex;
+               flex-direction: column;
+               .bottom{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                h1{
+                    font-size: 7rem;
+                }
+            }
+              .last{
+                text-align: left;
+                margin: 1rem;
+                padding: 1rem ;
+                width: 30%;
+                p{
+                    font-size: 1.3rem;
+                    line-height: 1.5;
+                }
+              }
+                }
+                .blank{
+        width: 100%;
+//    background: #000;
+        height:15vh ;
+    }
+                section.view2{
+                    .top{
+                        width: 100%;
+    video{
+        width: 10%;
+        border: none;
+    }
+                    }
+                    .bottom{
+                        // width: 80%;
+                        margin: 0rem 14rem;
+                        font-size: 2rem;
+                        padding: 0rem 5rem;
+                        h2{
+                            line-height: 1.3;
+                        }
+                    }
+                }
+             .blank1{
+        width: 100%;
+//    background: #000;
+        height:55vh ;
+    }
+    section.view3{
+        height: 83vh;
+        margin-top: 0.8rem  ;
+        margin: 0rem 2rem;
+    }
+//     .blank{
+//         width: 100%;
+// //    background: #000;
+//         height:280vh ;
+//     }
+    section.view4{
+       display: flex;
+     justify-content: space-between;
+    //  background-color: blue;
+     min-height: 90vh;
+   
+        h2{
+            font-size: 5.5rem;
+            width: 48%;
+            flex-wrap: nowrap;
+        }
+        .boxs{
+             display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     .box1{
+        @include flex;
+        
+         @include border;
+         
+     }
+     .box2{
+  @include border;
+     }
+     .box3{
+          @include border;
+     }
+     .box4{
+        border: none;
+     }
+            
+        }
+        // background: #000;
+    }
+    section.view5{
+        position: relative;
+         min-height: 105vh;
+         display: flex;
+         justify-content: center;
+           #head{
+            position: absolute;
+            // top: 49%;
+            width:50% ;
+            text-align: center;
+            font-size: 5rem;
+           }
+        .informationofemployee{
+            display: flex;
+           justify-content: center;
+          
+         
+            // flex-direction: column;
+            width: 23%;
+            .box1{
+                 width: 23%;
+                position: absolute;
+                top: 14%;
+                left: 35%;
+
+            }
+            .box2{
+                
+                 width: 23%;
+                position: absolute;
+                    bottom:0%;
+                right: 33%;
+            }
+            .box3{
+                
+                 width: 23%;
+                position: absolute;
+                    left: 3%;
+                    top: 40%;
+            }
+            .box4{
+  width: 23%;
+  top: 40%;
+                position: absolute;
+                    right: 3%;
+            }
+               &:hover {
+                
+            .box1 {
+                transition: all 1s ease;
+                left: 40%;
+                top: 30%;
+            }
+
+            .box2 {
+                transition: all 1s ease;
+                right: 40%;
+                bottom: 20%;
+            }
+
+            .box3 {
+                transition: all 1s ease;
+                left: 25%;
+                top: 50%;
+            }
+
+            .box4 {
+                right: 25%;
+                top: 50%;
+                transition: all 1s ease;
+            }
+        }       
+        }
+    
+    }
+}
+          
+            }
+            
+        
+        
