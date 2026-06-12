@@ -30,5 +30,9 @@ var dec = document.querySelector("#dec");
     // console.log('you click')ṭ
     a--;
     h4.innerText = a;
-})
-
+});
+var h3 =document.querySelector('#pra');
+h3.addEventListener('click',function(){
+    h3.innerText='you just clicked the h1';
+    h3.style.color ='red';
+});
