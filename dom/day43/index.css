@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main button {
+  background: red;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  z-index: 5;
+}
+.main button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=index.css.map */
