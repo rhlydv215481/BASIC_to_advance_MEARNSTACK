@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+.elemt {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  border-bottom: white 2px solid;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+}
+.elemt h1 {
+  display: flex;
+  margin: 0rem 1rem;
+  align-items: center;
+  font-size: 4rem;
+  z-index: 3;
+}
+.elemt img {
+  width: 10%;
+  position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 2s ease;
+  mix-blend-mode: difference;
+}/*# sourceMappingURL=index.css.map */

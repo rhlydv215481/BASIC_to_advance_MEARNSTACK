@@ -101,6 +101,7 @@
 //     // console.log(detail.target.value)
 //     h3.textContent =`${detail.target.value} your devices selected `
 // });
+// project 3
 let h1 = document.querySelector('h1');
 window.addEventListener('keydown',function(detail){
     // console.log(detail.key);

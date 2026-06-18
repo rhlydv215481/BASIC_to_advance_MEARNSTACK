@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .card {
+  height: 30rem;
+  width: 22rem;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 1.2rem;
+  gap: 0.5rem;
+}
+main .card i {
+  position: absolute;
+  font-size: 2rem;
+  background-image: url(https://img.magnific.com/free-vector/instagram-background-gradient-colors_23-2147819864.jpg?semt=ais_hybrid&w=740&q=80);
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: all cubic-bezier(0.63, 1.18, 0.89, 0.31) 1.8s;
+  transform: translate(-50%, -50%) scale(1) rotate(-60deg);
+}
+main .card img {
+  width: 100%;
+  padding: 0rem 1.7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .card h2 {
+  font-size: 2rem;
+}/*# sourceMappingURL=index.css.map */
