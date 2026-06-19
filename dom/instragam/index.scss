@@ -19,11 +19,15 @@ main{
         width: 20rem;
         background: white;
         border:  white solid 4px;
+         position: relative;      // 👈 zaroori hai .full ko absolute karne ke liye
+    overflow: hidden;
         .full{
+            //  display: none;        // 👈 default hidden
+        position: absolute; 
             height: 100%;
             width: 100%;
             // background: orange;
-            
+            z-index: 10;
                 background-position: center;
             background-size: cover;
             

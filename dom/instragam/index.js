@@ -5,12 +5,11 @@ arr = [
     },
     {
         dp:"https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        story:"https://unsplash.com/photos/a-woman-taking-a-picture-with-a-camera-aNuJbBM0omM"
-    
+        story:"https://images.unsplash.com/photo-1780764858417-95f075a5a564?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         dp:"https://images.unsplash.com/photo-1611601322175-ef8ec8c85f01?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fG1vZGVsfGVufDB8fDB8fHww",
-        story:"https://unsplash.com/photos/woman-sanding-wood-with-power-tool-in-workshop-7kfbZixwOZ8",
+        // story:"https://unsplash.com/photos/woman-sanding-wood-with-power-tool-in-workshop-7kfbZixwOZ8",
         story:"https://images.unsplash.com/photo-1754747100293-142e06a69adf?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
@@ -36,13 +35,6 @@ story.addEventListener('click',(detail)=>{
     // console.log(arr[detail.target.id].story)
     full.style.display = 'block'
    full.style.backgroundImage = `url(${arr[detail.target.id].story})`
-    setTimeout(() => {
-        arr.forEach( (ele,idx) => {
-    cullter +=  ` <div class="story">
-               <img  id="${idx}" src=" ${ele.dp}" alt="">
-            </div>`
-});
-
-    }, 2000);
+   
 }
 );

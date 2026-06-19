@@ -22,10 +22,14 @@ main .card {
   width: 20rem;
   background: white;
   border: white solid 4px;
+  position: relative;
+  overflow: hidden;
 }
 main .card .full {
+  position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 10;
   background-position: center;
   background-size: cover;
 }
