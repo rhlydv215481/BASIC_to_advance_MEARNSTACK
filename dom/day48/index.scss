@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 150%;
+    width: 100%;
+    background: #000;
+}
+#box{
+    background: red;
+    height: 280px;
+    width: 280px;
+}
+
+img {
+    //  time 44 day 48
+  position: fixed;
+//    absloye issa lya nhi leya kyu ki scroll karta hua tho ye cursore mera main cursor ko follow nhi karega
+ width: 4rem;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+ 
+}
+main {
+  height: 100vh;
+   cursor: none;
+}

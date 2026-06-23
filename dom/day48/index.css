@@ -1,0 +1,29 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 150%;
+  width: 100%;
+  background: #000;
+}
+
+#box {
+  background: red;
+  height: 280px;
+  width: 280px;
+}
+
+img {
+  position: fixed;
+  width: 4rem;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  height: 100vh;
+  cursor: none;
+}/*# sourceMappingURL=index.css.map */
