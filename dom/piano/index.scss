@@ -1,0 +1,87 @@
+
+@mixin blackbox ($left){
+position: absolute;          
+            left:$left;
+            height: 25vh;
+            // bottom: 0;
+              border: 1px black solid;
+              background: #000;
+               width: 5%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+main{
+    // background: #000;
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items:flex-end;
+    // flex-direction: column;
+     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:center;
+    .piano{
+
+        // border: whitesmoke 2px solid;
+        background: orange;
+        height: 42vh;
+         width: 60%;
+         display: flex;
+         margin: 3rem;
+        //  display: flex;
+
+            
+      .box{
+                position: relative;
+        border: 1px black solid;
+            // height: 10vh;
+            width: 15%;
+            display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                // margin-bottom: 2rem;
+            span{
+                color: #000;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+            
+            .blackbox{
+                position: absolute;
+                height: 25vh;
+                transform: translateX(-50%);
+             display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            top: 0;
+        left: 100%;
+              border: 1px black solid;
+              background: #000;
+               width: 5vb;
+                 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+                 span{
+                color: whitesmoke;
+                margin-bottom: 2rem;
+                font-size: 2rem;
+            }
+            }
+         }
+           .blackbox:active{
+            scale: 0.95;
+        }
+        .box:active{
+            background: #e0a36a;
+            
+        }
+           
+    }
+}

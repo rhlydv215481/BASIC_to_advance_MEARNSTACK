@@ -1,0 +1,64 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .piano {
+  background: orange;
+  height: 42vh;
+  width: 60%;
+  display: flex;
+  margin: 3rem;
+}
+main .piano .box {
+  position: relative;
+  border: 1px black solid;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .piano .box span {
+  color: #000;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+main .piano .box .blackbox {
+  position: absolute;
+  height: 25vh;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  top: 0;
+  left: 100%;
+  border: 1px black solid;
+  background: #000;
+  width: 5vb;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+main .piano .box .blackbox span {
+  color: whitesmoke;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+main .piano .blackbox:active {
+  scale: 0.95;
+}
+main .piano .box:active {
+  background: #e0a36a;
+}/*# sourceMappingURL=index.css.map */
