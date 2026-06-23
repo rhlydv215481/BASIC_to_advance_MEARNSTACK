@@ -1,3 +1,6 @@
+// [] kab use krata hai tab muja vo value chaheya  
+// . tab kab muja pata hai ki ye he aana walla hai 
+
 let box = document.querySelectorAll('.box');
 let blackbox = document.querySelectorAll('.blackbox')
 let span = document.querySelector('span')
