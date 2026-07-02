@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: #383737;
+  padding: 1rem;
+}
+main section {
+  scroll-snap-type: y mandatory;
+  margin: auto;
+  height: 100%;
+  width: min(23rem, 100%);
+  overflow-y: scroll;
+}
+main section::-webkit-scrollbar {
+  display: none;
+}
+main section {
+  border-radius: 1.7rem;
+}
+main section .allreel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  height: 100%;
+  width: 100%;
+}
+main section .allreel .reel {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100%;
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+}
+main section .allreel .reel .comment {
+  transition: all cubic-bezier(0.36, 1.35, 0.55, -0.23) 2s;
+  color: white;
+  opacity: 0;
+  display: block;
+  border-radius: 2.5rem;
+  z-index: 2;
+  position: absolute;
+  background: #000;
+  width: 80%;
+  height: 50vh;
+  bottom: -50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main section .allreel .reel .comment h3 {
+  margin: 0.8rem;
+}
+main section .allreel .reel .comment .text {
+  display: flex;
+  width: auto;
+  gap: 1rem;
+  margin: 0rem 0.8rem 2rem;
+}
+main section .allreel .reel .comment .text input {
+  padding: 0.1rem;
+  font-size: 1rem;
+  transition: 0.3s;
+  border-radius: 2.5rem;
+  background: #1f1f1f;
+  color: white;
+  box-sizing: border-box;
+  outline: none;
+}
+main section .allreel .reel .comment .text button {
+  padding: 0rem 1rem;
+  background: #eb8202;
+  font-size: 0.7rem;
+  border-radius: 1.2rem;
+  outline: none;
+  color: wheat;
+}
+main section .allreel .reel video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 1.5rem;
+}
+main section .allreel .reel .bottom {
+  background: linear-gradient(to bottom, transparent, black);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section .allreel .reel .bottom .top {
+  display: flex;
+  gap: 1.7rem;
+  align-items: center;
+}
+main section .allreel .reel .bottom .top img {
+  width: 2rem;
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+}
+main section .allreel .reel .bottom .top h4 {
+  color: whitesmoke;
+  font-size: 1.3rem;
+}
+main section .allreel .reel .bottom .top button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  border-radius: 0rem 0.7rem;
+  border: solid 0.5 whitesmoke;
+  color: whitesmoke;
+  background: transparent;
+}
+main section .allreel .reel .bottom .down {
+  width: 100%;
+}
+main section .allreel .reel .bottom .down h2 {
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+main section .allreel .reel .right {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 2rem;
+  color: white;
+}
+main section .allreel .reel .right .like .ri-heart-fill {
+  color: red;
+}
+main section .allreel .reel .right .like {
+  width: 4rem;
+}
+main section .allreel .reel .right i {
+  display: flex;
+  flex-direction: column;
+}
+main section .allreel .reel .right i h3 {
+  font-size: 1.4rem;
+}
+main section .allreel .reel .right h3 {
+  font-size: 1.4rem;
+}/*# sourceMappingURL=index.css.map */
