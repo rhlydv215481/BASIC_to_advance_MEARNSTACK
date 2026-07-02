@@ -37,67 +37,67 @@
     iscomment: false,
   comment:[] ,
   },
-  // {
-    //   videoLink: "https://www.pexels.com/download/video/12107199/",
-    // comment:[] ,
-  //   likeCount: 6400,
-  //   caption: "Coffee time ☕",
-  //   isliked:false,
-  //   userProfile: "https://images.unsplash.com/photo-1777492200923-44a43f26c000?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   shareCount: 180,
-  //   commentCount: 60,
-  //   isFollowed: false,
-  //   username: "coffee_lover"
-  // },
-  // {
-  //   videoLink: "https://www.pexels.com/download/video/17630240/",
-  //   likeCount: 19300,
-  //   isliked:false,
-  //   caption: "Nature is beautiful 🌿",
-  //   userProfile: "https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   shareCount: 740,
-  // comment:[] ,
-  //   commentCount: 310,
-  //   isFollowed: true,
-  //   username: "nature_clicks"
-  // },
-  // {
-  //   videoLink: "https://www.pexels.com/download/video/29938388/",
-  //   likeCount: 12890,
-  // comment:[] ,
-  //   caption: "Weekend fun 😎",
-  //   userProfile: "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?q=80&w=719&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   isliked:false,
-  //   shareCount: 430,
-  //   commentCount: 140,
-  //   isFollowed: false,
-  //   username: "weekend_vibes"
-  // },
-  // {
-  //   videoLink: "https://www.pexels.com/download/video/33192052/",
-  //   likeCount: 31000,
-  //   caption: "Dance challenge 🔥",
-  //   userProfile: "https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   shareCount: 1250,
-  //   isliked:false,
-  //   commentCount: 680,
-  // comment:[] ,
-  //   isFollowed: true,
-  //   username: "dance_king"
-  // },
-  // {
-  //   videoLink: "https://www.pexels.com/download/video/36437810/",
-  //   likeCount: 7200,
-  //   caption: "Happy moments ❤️",
-  //   userProfile: "https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   isliked:true,
-  //   shareCount: 150,
-  // iscomment: true,
-  //   comment:[] ,
-  //   commentCount: 75,
-  //   isFollowed: false,
-  //   username: "happy_soul"
-  // }
+  {
+      videoLink: "https://www.pexels.com/download/video/12107199/",
+    comment:[] ,
+    likeCount: 6400,
+    caption: "Coffee time ☕",
+    isliked:false,
+    userProfile: "https://images.unsplash.com/photo-1777492200923-44a43f26c000?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    shareCount: 180,
+    commentCount: 60,
+    isFollowed: false,
+    username: "coffee_lover"
+  },
+  {
+    videoLink: "https://www.pexels.com/download/video/17630240/",
+    likeCount: 19300,
+    isliked:false,
+    caption: "Nature is beautiful 🌿",
+    userProfile: "https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    shareCount: 740,
+  comment:[] ,
+    commentCount: 310,
+    isFollowed: true,
+    username: "nature_clicks"
+  },
+  {
+    videoLink: "https://www.pexels.com/download/video/29938388/",
+    likeCount: 12890,
+  comment:[] ,
+    caption: "Weekend fun 😎",
+    userProfile: "https://images.unsplash.com/photo-1568252542512-9fe8fe9c87bb?q=80&w=719&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    isliked:false,
+    shareCount: 430,
+    commentCount: 140,
+    isFollowed: false,
+    username: "weekend_vibes"
+  },
+  {
+    videoLink: "https://www.pexels.com/download/video/33192052/",
+    likeCount: 31000,
+    caption: "Dance challenge 🔥",
+    userProfile: "https://images.unsplash.com/photo-1526510747491-58f928ec870f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    shareCount: 1250,
+    isliked:false,
+    commentCount: 680,
+  comment:[] ,
+    isFollowed: true,
+    username: "dance_king"
+  },
+  {
+    videoLink: "https://www.pexels.com/download/video/36437810/",
+    likeCount: 7200,
+    caption: "Happy moments ❤️",
+    userProfile: "https://plus.unsplash.com/premium_photo-1669704098750-7cd22c35422b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    isliked:true,
+    shareCount: 150,
+  iscomment: true,
+    comment:[] ,
+    commentCount: 75,
+    isFollowed: false,
+    username: "happy_soul"
+  }
 ];
 let allreel = document.querySelector('.allreel')
 
