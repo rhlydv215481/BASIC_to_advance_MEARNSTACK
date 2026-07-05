@@ -1,0 +1,107 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  background: #490ee0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  gap: 1.4rem;
+  max-height: 50%;
+  width: 100%;
+  background: #000000;
+  border-radius: 10%;
+}
+.main section .text {
+  border: solid 2px gray;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 4vh;
+  background: green;
+  gap: 0.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.main section .text input {
+  font-size: 1.2rem;
+  text-align: center;
+  flex: 1;
+}
+.main section .text button {
+  font-size: 1.5rem;
+  padding: 0 0.7rem;
+  border-radius: 0.7rem;
+}
+.main section .task {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.main section .task::-webkit-scrollbar {
+  display: none;
+}
+.main section .task li {
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-shrink: 0;
+  padding: 0rem 0.5rem;
+  background: wheat;
+  border: solid;
+  height: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+.main section .task li .icon {
+  display: flex;
+  gap: 0.3rem;
+}
+.main section .task li .icon i {
+  font-size: 2.6rem;
+}
+.main section .task li .icon .ri-checkbox-fill {
+  color: green;
+}
+.main section .task li .icon .ri-delete-bin-fill {
+  color: red;
+}
+.main section .task li p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    background: red;
+  }
+  .main section {
+    max-height: 50vh;
+    width: 30%;
+  }
+}/*# sourceMappingURL=index.css.map */

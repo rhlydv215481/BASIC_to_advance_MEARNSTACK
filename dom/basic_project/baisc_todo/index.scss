@@ -1,0 +1,129 @@
+@mixin display{
+     display: flex;
+        justify-content: center;
+        align-items: center;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    // background: #000;
+}
+    .main{
+     height: 100%;
+    width: 100%;
+    background: #490ee0;
+    padding: 1rem;
+      @include display;
+    section{
+        padding: 2rem;
+         display: flex;
+          flex-direction: column;
+        //   justify-content: center;
+          // flex-shrink: 0;
+        align-items: center;
+          color: aliceblue; 
+          gap: 1.4rem;  
+        // height: 50%; 
+        max-height: 50%;
+        width: 100%;
+        background: #000000;
+        border-radius: 10%;
+       .text{
+        border: solid 2px gray;
+       display: flex;
+       justify-content: space-between;
+        width: 100%;
+       min-height:  4vh;
+        background: green;
+        gap: 0.5rem;
+        overflow: hidden;
+        position: relative;
+        input{
+          font-size: 1.2rem;
+          //  height: 100%;
+           text-align: center;
+          flex: 1;// ye bakki bacha huva space hai ussa cover kar 
+        }
+        button{
+          // position: absolute;
+        font-size: 1.5rem;
+        padding: 0 0.7rem;
+        border-radius: 0.7rem;
+        }
+       }
+        .task{
+            // overflow-y: hidden;
+            
+            padding: 0.5rem;
+            border-radius: 1rem;
+        //    background:wheat;
+            color: #000000;
+            height: 100%;
+            width: 100%;
+            // background:wheat;
+               display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                // gap: 1rem;
+            li{ 
+                justify-content: space-between;
+                border-radius: 1rem;
+                padding: 0.3rem;
+                display: flex;
+                flex-shrink: 0;
+                padding: 0rem 0.5rem;
+                 background:wheat;
+                // margin: 0.5rem;
+                border: solid;
+                // height: 100%;
+                height: 3rem;
+                width: 100%;
+                font-size: 1.5rem;
+                // p{
+                //    text-decoration: line-through;
+                // }
+                .icon{
+                    display: flex;
+                    gap: 0.3rem;
+                      i{
+                    font-size: 2.6rem;
+                    // color: green
+                }
+                .ri-checkbox-fill{
+    color: green;
+  }
+
+  .ri-delete-bin-fill{
+   
+    color: red;
+  }
+                }
+              
+                p{
+                     @include display;
+                }
+            }
+
+        }
+        
+    }
+
+}
+@media (min-width: 1024px) {
+  .main {
+  
+    background: red;
+    section{
+     max-height:  50vh;
+      width: 30%;
+    }
+  }
+}
