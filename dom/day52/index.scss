@@ -1,0 +1,156 @@
+@mixin pho {
+    display: flex;
+   background-size: cover;
+   flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    // width: 30%;
+    position: relative;
+    height: 100%;
+       display: flex;
+        justify-content: center;
+        video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    // background-image: url(#{$img});
+}
+@mixin transition {
+    
+        align-items: center;
+         transition: all 5s cubic-bezier(0,-0.93,.97,-0.02);
+       
+        h1{
+            position: absolute;
+            bottom: -10%;
+            
+             transition: all 5s cubic-bezier(0,-0.34,.78,1.04);
+        }
+        // flex: 1.5;
+background-position: top;
+}
+:root{
+    --x: 400px;
+    --y:400px;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    background: #000;
+    color: blueviolet;
+     cursor: none;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    // background: red;
+    //   color: rgb(rgb(7, 7, 7));
+}
+main{
+    height: 100%;
+    width: 100%;
+    // background: radial-gradient(400px,400px, color1, color2, ...);
+    section{
+        position:relative;
+        height: 100%;
+        width: 100%;
+        
+        .top{
+            display: flex;
+            
+            gap: 0.5rem;
+            height: 100%;
+            width: 100%;
+            .right{
+                // height: 100%
+            position: relative;
+    overflow: hidden;
+    video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+                //  flex: 1;
+                // background-position: 40%;
+                // height: 100%;
+                // background-image:url('https://images.unsplash.com/photo-1623039497026-00af61471107?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                @include pho;
+               @include transition;
+        // background-position: 50%  30%;
+    }
+    .left{
+        @include pho;
+        //  flex: 1;
+        // background-image: url('https://plus.unsplash.com/premium_photo-1669704098876-2a38eb10e56a?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+       @include transition;
+    }
+    .centre{
+        @include pho;
+      @include transition;
+//         align-items: center;
+//          transition: all 5s cubic-bezier(0,-0.93,.97,-0.02);
+       
+//         h1{
+//             position: absolute;
+//             bottom: -10%;
+            
+//              transition: all 5s cubic-bezier(0,-0.34,.78,1.04);
+//         }
+//         flex: 1.5;
+// background-position: top;
+//  background-image: url('https://images.unsplash.com/photo-1601762603339-fd61e28b698a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    }
+    }
+    &::after{
+        position: absolute;
+        
+        content: ' ';
+         background: radial-gradient(  170px at var(--x) var(--y),transparent, rgba(7, 7, 7, 0.854));
+          inset: 0;
+          pointer-events: none;//Ab overlay dikhega, lekin mouse events pass ho jayenge aur hover kaam karega 
+          cursor: none;
+    // inset: 0; kya hota hai?
+
+// Ye shortcut hai 4 lines ka:
+
+// top: 0;
+// right: 0;
+// bottom: 0;
+// left: 0;
+
+// Matlab agar kisi element pe:
+
+// position: absolute;
+// inset: 0;
+
+// lagaya, toh wo apne parent ke charo side chipak jaata hai
+    }
+    .centre:hover{
+    flex: 1.5;
+    H1{
+
+        bottom: 50%;
+    }
+}
+ .right:hover{
+    flex: 1.5;
+    H1{
+        bottom: 50%;
+    }
+}
+.left:hover{
+    flex: 1.5;
+    // bottom: 50%;
+    H1{
+        bottom: 50%;
+    }
+}
+
+    }
+    
+}
