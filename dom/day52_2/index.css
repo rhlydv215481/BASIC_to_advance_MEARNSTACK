@@ -1,0 +1,37 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #000;
+  color: blueviolet;
+  cursor: none;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+main section .top {
+  color: green;
+  font-size: 4rem;
+}
+main section .top h1 {
+  color: green;
+  font-size: 4rem;
+}/*# sourceMappingURL=index.css.map */
