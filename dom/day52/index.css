@@ -27,8 +27,21 @@ main section {
   height: 100%;
   width: 100%;
 }
+main section .title {
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.3;
+  color: white;
+  font-size: 50px;
+}
 main section .top {
   display: flex;
+  position: absolute;
   gap: 0.5rem;
   height: 100%;
   width: 100%;
@@ -146,17 +159,17 @@ main section .centre:hover {
   flex: 1.5;
 }
 main section .centre:hover H1 {
-  bottom: 50%;
+  bottom: 30%;
 }
 main section .right:hover {
   flex: 1.5;
 }
 main section .right:hover H1 {
-  bottom: 50%;
+  bottom: 30%;
 }
 main section .left:hover {
   flex: 1.5;
 }
 main section .left:hover H1 {
-  bottom: 50%;
+  bottom: 30%;
 }/*# sourceMappingURL=index.css.map */

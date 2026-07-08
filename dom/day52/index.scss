@@ -4,7 +4,7 @@
    flex: 1;
     background-position: center;
     background-repeat: no-repeat;
-    // width: 30%;
+  
     position: relative;
     height: 100%;
        display: flex;
@@ -15,7 +15,6 @@
     height: 100%;
     object-fit: cover;
 }
-    // background-image: url(#{$img});
 }
 @mixin transition {
     
@@ -28,7 +27,6 @@
             
              transition: all 5s cubic-bezier(0,-0.34,.78,1.04);
         }
-        // flex: 1.5;
 background-position: top;
 }
 :root{
@@ -47,21 +45,32 @@ html,body{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    // background: red;
-    //   color: rgb(rgb(7, 7, 7));
 }
 main{
     height: 100%;
     width: 100%;
-    // background: radial-gradient(400px,400px, color1, color2, ...);
     section{
         position:relative;
         height: 100%;
         width: 100%;
-        
+        .title {
+    position: absolute;
+    top: 18rem;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 80%;
+    text-align: center;
+    z-index: 1;
+        opacity: 0.3;
+    color: white;
+    // color: rgba(6, 228, 58, 0.854);
+    font-size: 50px;
+}
         .top{
             display: flex;
             
+            position: absolute;
             gap: 0.5rem;
             height: 100%;
             width: 100%;
@@ -76,7 +85,7 @@ main{
     object-fit: cover;
 }
                 //  flex: 1;
-                // background-position: 40%;
+                
                 // height: 100%;
                 // background-image:url('https://images.unsplash.com/photo-1623039497026-00af61471107?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
                 @include pho;
@@ -110,10 +119,11 @@ main{
         position: absolute;
         
         content: ' ';
-         background: radial-gradient(  170px at var(--x) var(--y),transparent, rgba(7, 7, 7, 0.854));
+ background: radial-gradient(  170px at var(--x) var(--y),transparent, rgba(7, 7, 7, 0.854));
           inset: 0;
           pointer-events: none;//Ab overlay dikhega, lekin mouse events pass ho jayenge aur hover kaam karega 
           cursor: none;
+         
     // inset: 0; kya hota hai?
 
 // Ye shortcut hai 4 lines ka:
@@ -133,21 +143,22 @@ main{
     .centre:hover{
     flex: 1.5;
     H1{
-
-        bottom: 50%;
+        // color: whitesmoke;
+        bottom: 30%;
     }
 }
  .right:hover{
     flex: 1.5;
     H1{
-        bottom: 50%;
+       
+        bottom: 30%;
     }
 }
 .left:hover{
     flex: 1.5;
     // bottom: 50%;
     H1{
-        bottom: 50%;
+        bottom: 30%;
     }
 }
 
