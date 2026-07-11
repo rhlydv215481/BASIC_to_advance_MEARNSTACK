@@ -1,0 +1,47 @@
+// box shadow x y spred colour  inset use karat hai tho ye box ka ander bann ta hai 
+// inset  0 0 1px black 
+// text shadow conic gradianted  from  40 deg white black  from degree pata hai 
+// ketfram
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@keyframes backgroundcolour {
+    from{
+        flex: 1;
+        background-color: white ;
+    }
+    to{
+        // color: 
+        flex: 0.5;
+        border: white 2px solid;
+        border-radius: 30px;
+    text-shadow: 15px 17px 2px rgb(0, 34, 255)  ;
+        background-color: rgba(227, 46, 46, 0.609) ;
+    }
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 50vh;
+    width: 30vw;
+    background: white;
+    box-shadow: inset 0px 0px 40px rgb(241, 77, 77);
+    animation: backgroundcolour 5s alternate infinite;
+    h1{
+        color: #000;
+        font-size: 2rem;
+        text-shadow: 15px 17px 2px rgb(200, 0, 255) ;
+    }
+}
