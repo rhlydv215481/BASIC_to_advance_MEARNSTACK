@@ -1,0 +1,154 @@
+// box shadow x y spred colour  inset use karat hai tho ye box ka ander bann ta hai 
+// inset  0 0 1px black 
+// text shadow conic gradianted  from  40 deg white black  from degree pata hai 
+// ketfram
+// deiscreted properties in css  ko animated nhi kar sakta ok simple
+//  kya kya hai iss amai 
+// area Common discrete properties:
+// display
+// visibility
+// position (mostly)
+// overflow
+// z-index
+// font-family
+// animation-direction
+// animation-play-state
+// Smoothly animate hone wali properties (continuous):
+// transform
+// opacity
+// width
+// height
+// color
+// background-color
+// margin
+// padding
+// border-radius
+// @properties : custom variabler kart sakta hai 
+// CSS Variables sirf values store karti hain.
+
+// @property browser ko batata hai ki us variable ki type kya hai, taaki browser usse sahi tarike se animate aur validate kar sake.
+// ex @property --radius{
+//     syntax: "<colour>"; // ye batayaga ki kya hai length hai colour hai percentage hai Ye browser ko batata hai variable kis type ka hai.
+//     initial-value: red; // default colour
+//     inherits: false; // parent ki vale lega tho true nhi tho flase
+// ye css variable se bhi hota magar bhot website ko bata nhi chala ta tho vo red se direct blue par jump karta 
+//  tu ye property use karega tho Red → Pink → Purple → Blue issa pata hai ki smooth he janna hai  css  vriable directed jump karega ok
+// }
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@keyframes backgroundcolour {
+    from{
+        // flex: 1;
+        // background-color: white ;
+        
+ flex: 1;
+    }
+    to{
+       border-radius: 90px;
+        flex: 0.22;
+        // flex-direction: column;
+    }
+}
+@keyframes moveHeading {
+    from {
+        left: 0%;
+        // flex: 1;
+    }
+    to {
+        
+        left: 30%;
+    }
+}
+@keyframes ballMove {
+    0%{
+        transform: translate(0, 0);
+    }
+    // 25%{
+    //     transform: translate(150px, -80px);
+    // }
+    50%{
+        transform: translate(300px, -120px);
+    }
+    75%{
+        transform: translate(450px, -60px);
+    }
+    100%{
+        transform: translate(600px, 0);
+    }
+}
+@property --bgcolour {
+    syntax: "<color>";
+    initial-value: red;
+    inherits: false;
+}
+@keyframes box2 {
+    from{
+        // background-color: var(--bgcolour, red);
+        transform: rotate(360deg);
+    }
+    to{
+         background-color: var(--bgcolour,  rgb(67, 215, 67));
+    }
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+}
+.box{
+    // overflow: hidden;
+    height: 50%;
+    width: 50%;
+display: flex;
+justify-content: center;
+    .ball {
+    // width: 80px;
+    position: absolute;
+    left: 0%;
+    right: 50%;
+    animation: ballMove 3s linear infinite alternate;
+}
+    // img{
+    //     // position: absolute;
+    //     // transform: translateY(-50px);
+    //     height: 70px;
+    //     width: 70px;
+    //     background: yellow;
+    //     animation: ballmove 1s linear infinite ;
+    // }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    height: 50vh;
+    width: 30vw;
+    background: white;
+    box-shadow: inset 0px 0px 40px rgb(241, 77, 77);
+    gap: 0.5rem;
+    animation: backgroundcolour 5s alternate forwards infinite ;
+    h1{
+        position: absolute;
+        color: #000;
+        font-size: 2rem;
+        animation: moveHeading 5s infinite alternate;
+        text-shadow: 15px 17px 2px rgb(200, 0, 255) ;
+    }
+   
+}
+ .box2{
+        width: 76px;
+        height: 60px;
+        border-radius: 20px;
+        border: solid white 2px ;
+        animation: box2 3s forwards alternate infinite ;
+        // background:--bgcolour;
+        background: var(--bgcolour);
+    }

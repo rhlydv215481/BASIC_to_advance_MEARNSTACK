@@ -1,0 +1,100 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+@keyframes backgroundcolour {
+  from {
+    flex: 1;
+  }
+  to {
+    border-radius: 90px;
+    flex: 0.22;
+  }
+}
+@keyframes moveHeading {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 30%;
+  }
+}
+@keyframes ballMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(300px, -120px);
+  }
+  75% {
+    transform: translate(450px, -60px);
+  }
+  100% {
+    transform: translate(600px, 0);
+  }
+}
+@property --bgcolour {
+  syntax: "<color>";
+  initial-value: red;
+  inherits: false;
+}
+@keyframes box2 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    background-color: var(--bgcolour, rgb(67, 215, 67));
+  }
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.box .ball {
+  position: absolute;
+  left: 0%;
+  right: 50%;
+  animation: ballMove 3s linear infinite alternate;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+  height: 50vh;
+  width: 30vw;
+  background: white;
+  box-shadow: inset 0px 0px 40px rgb(241, 77, 77);
+  gap: 0.5rem;
+  animation: backgroundcolour 5s alternate forwards infinite;
+}
+.box h1 {
+  position: absolute;
+  color: #000;
+  font-size: 2rem;
+  animation: moveHeading 5s infinite alternate;
+  text-shadow: 15px 17px 2px rgb(200, 0, 255);
+}
+
+.box2 {
+  width: 76px;
+  height: 60px;
+  border-radius: 20px;
+  border: solid white 2px;
+  animation: box2 3s forwards alternate infinite;
+  background: var(--bgcolour);
+}/*# sourceMappingURL=index.css.map */
