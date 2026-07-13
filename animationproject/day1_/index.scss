@@ -1,0 +1,155 @@
+@mixin box{
+flex-wrap: nowrap;
+color: white;
+        border: 2px black solid;
+        height: 50vh;
+        flex-shrink: 0;
+        width: 100%;
+        // margin: 1.4rem;
+        border-radius: 18px;
+        background-size: 110%;
+        background-repeat: no-repeat;
+        transition: all ease 0.8s ;
+        transform: translateY(40px);
+        // transform: translateX(20px);
+       .sbox{
+        opacity: 0;
+    position: relative;
+             width: 100%;
+             padding: 1rem;
+            //  margin: 0.5rem;
+             border:white solid 0.5px; 
+             background: #0000005d;
+             height: 100%;
+             border-radius: 10px;
+            
+             .icone{
+                position: absolute;
+                 bottom:5% ;
+                 font-size: 2rem;
+            }
+        }
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      height: 100%;
+    width: 100%;
+    // background: #000;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    // padding: 1rem;
+    .card{
+        // margin-top: -2rem;
+        overflow-y: scroll;
+        // overflow-x: hidden;
+        position: relative;
+         display: flex;
+         flex-direction: column;
+    align-items: center;
+    background: #000;
+    // justify-content:flex-start;
+    height: 100vh;
+    width: 100vh;
+    padding: 1.3rem;
+    gap: 2rem;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+   
+    .box{
+        // position: absolute;
+        padding: 0.5rem;
+ 
+        
+        @include box;
+           background-image: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg");     
+        &:active{   
+            background-size: 200%;
+            background-position: center left;
+            .sbox{
+                opacity: 1;
+            } 
+        }
+    }
+    .box2{
+        background-image: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg");
+         padding: 0.5rem;
+        @include box;
+         &:active{   
+            background-size: 200%;
+            background-position: center left;
+            .sbox{
+                opacity: 1;
+            } 
+        }
+    }
+    .box3{
+        background-image: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg");
+    padding: 0.5rem;
+    // margin-bottom: 2rem;
+        @include box;
+         &:active{   
+            background-size: 200%;
+            background-position: center left;
+            .sbox{
+                opacity: 1;
+            } 
+        }
+    }
+    }
+}
+@media (min-width:1024px) {
+    main{
+        // display: flex;
+        // width: 100%;
+        .card{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            // padding: 4rem;
+            justify-content: center;
+            align-content: center;
+            .box{
+                width:20%;
+                &:hover{
+                      background-size: 200%;
+            background-position: center left;
+            .sbox{
+                opacity: 1;
+            }
+                }
+            }
+            .box2{
+                width: 20%;
+   &:hover{
+                      background-size: 200%;
+            background-position: center bottom ;
+            .sbox{
+                opacity: 1;
+            }
+            }
+            }
+            .box3{
+                width: 20%;
+                 &:hover{
+                      background-size: 200%;
+            background-position: center right;
+            .sbox{
+                opacity: 1;
+            }
+            }
+            // padding: 1rem;
+        }
+    }
+}
+}
