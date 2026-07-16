@@ -1,0 +1,54 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url("./background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: azure;
+}
+main .dumpname {
+  display: flex;
+  padding: 0% 1rem;
+  gap: 1rem;
+  width: 100%;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: space-evenly;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  width: 50dvw;
+  height: 30dvh;
+}
+main #border {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid black;
+}
+main #border p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+main #border:active {
+  scale: 1.2;
+  background: #000;
+}/*# sourceMappingURL=index.css.map */
