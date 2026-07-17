@@ -1,0 +1,28 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #namefile {
+  display: none;
+}
+main button {
+  background: #000;
+  font-size: 4rem;
+  color: aliceblue;
+  padding: 0.7rem;
+  border-radius: 45px;
+}/*# sourceMappingURL=index.css.map */
