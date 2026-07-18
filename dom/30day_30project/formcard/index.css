@@ -1,0 +1,144 @@
+* {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  color: aliceblue;
+}
+
+main {
+  font-size: 2rem;
+  min-height: 100%;
+  gap: 3rem;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+main form {
+  border-radius: 2rem;
+  border: white solid 2px;
+  width: 100%;
+  padding: 1rem 0rem;
+}
+main form .classfiled {
+  padding: 0rem 1.2rem;
+  line-height: 1.5;
+  display: flex;
+}
+main form .classfiled input {
+  flex: 1;
+  height: 40px;
+}
+main form .btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main form .btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+main form .btn:active {
+  transform: scale(0.98);
+}
+main .allcard {
+  width: 100%;
+  overflow-y: auto;
+  border-radius: 30px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  scroll-behavior: smooth;
+}
+main .allcard .card {
+  border: wheat solid 2px;
+  border-radius: 30px;
+  background: gray;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  gap: 2rem;
+  align-items: center;
+}
+main .allcard .card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+main .allcard .card .information {
+  line-height: 1.3;
+  background-size: cover;
+  background-position: bottom center;
+  color: transparent;
+  background-image: url(https://plus.unsplash.com/premium_photo-1661962607720-d23f056f56e6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main form {
+    width: 30dvw;
+  }
+  main .allcard {
+    overflow-y: auto;
+  }
+  main .allcard::-webkit-scrollbar {
+    display: none;
+  }
+  main .allcard {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  main .allcard .card {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+  }
+  main .allcard .card img {
+    margin: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 30%;
+    aspect-ratio: 1/1;
+  }
+}/*# sourceMappingURL=index.css.map */
