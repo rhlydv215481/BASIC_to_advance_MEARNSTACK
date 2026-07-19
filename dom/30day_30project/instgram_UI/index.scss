@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("./Billabong.otf");
+}
+
+.logo{
+    font-family: "Billabong";
+    font-size: 2.7rem;
+    font-weight: normal;
+    color: white;
+}
+@mixin flex{
+    display: flex;
+align-items:center ;
+justify-content: center;
+}
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+width: 100%;
+// padding: 2rem 0rem;
+background: #000;
+ @include flex;
+    .instgram{
+        background: #2b2929;
+        height: min(50rem,100%); // ye walla issa mia se konsa chota hoga vo lega ok 
+        width:min(23rem,100%);
+        padding: 1rem;
+        position: relative;
+        .story{
+             width: 100%;
+             display: flex;
+             flex-direction: column;
+             gap: 0.5rem;
+             border-bottom: 2px solid rgb(22, 21, 21,0.5)  ;
+            .top{
+                 width: 100%;
+            // height: 4vh;
+             display: flex;
+            justify-content: space-between;
+                   i{
+            font-size: 2.4rem;
+            color: white;
+        }
+            }
+           .bottom{
+            margin: 0.7rem 0rem;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-y: hidden;
+            overflow-x:auto;
+            // background: green;
+            width: 100%;
+            height: 12vh;
+            gap: 1rem;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                width: 15vb;
+                 aspect-ratio: 1 / 1;
+                 border: 2px solid transparent;
+                 background:conic-gradient(blue,red,rgb(170, 23, 206), rgb(238, 4, 164));
+            }
+           }
+
+        }
+    .story-overlay{
+        display: none;
+        inset: 0;
+        position: absolute;
+        height:100% ;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+        .post{
+            // display: contents;
+
+        }
+        
+    }
+    // background: #000;
+    // display: flex;
+    // justify-content: center;
+}

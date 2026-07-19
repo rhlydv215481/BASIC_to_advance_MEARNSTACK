@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Billabong";
+  src: url("./Billabong.otf");
+}
+.logo {
+  font-family: "Billabong";
+  font-size: 2.7rem;
+  font-weight: normal;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .instgram {
+  background: #2b2929;
+  height: min(50rem, 100%);
+  width: min(23rem, 100%);
+  padding: 1rem;
+  position: relative;
+}
+main .instgram .story {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 2px solid rgba(22, 21, 21, 0.5);
+}
+main .instgram .story .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .instgram .story .top i {
+  font-size: 2.4rem;
+  color: white;
+}
+main .instgram .story .bottom {
+  margin: 0.7rem 0rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: 100%;
+  height: 12vh;
+  gap: 1rem;
+}
+main .instgram .story .bottom::-webkit-scrollbar {
+  display: none;
+}
+main .instgram .story .bottom img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 15vb;
+  aspect-ratio: 1/1;
+  border: 2px solid transparent;
+  background: conic-gradient(blue, red, rgb(170, 23, 206), rgb(238, 4, 164));
+}
+main .instgram .story-overlay {
+  display: none;
+  inset: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+main .instgram .story-overlay img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=index.css.map */
