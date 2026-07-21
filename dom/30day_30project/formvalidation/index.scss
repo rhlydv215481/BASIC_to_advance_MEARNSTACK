@@ -1,0 +1,43 @@
+*{
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    background: #000;
+   color: aliceblue;
+}
+form{
+      gap: 1rem;
+     display: flex;
+      flex-direction: column;
+color: white;
+font-size: 2rem;
+input{
+    font-size: 2rem;
+    display: block;
+}
+button{
+    font-size: 2rem;
+    // border: white;
+    color: aliceblue;
+    background: #000;
+    border: white 2px solid;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+small{
+    color: white;
+    font-size: 20px;
+}
+}
