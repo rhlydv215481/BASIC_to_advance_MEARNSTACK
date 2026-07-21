@@ -40,7 +40,7 @@ inputs.forEach((input) => {
         // Step 4: Sab sahi hai
      p.innerText = " Form Submitted Successfully ";    }
 
-    
+    form.reset()
 }
 );
 
@@ -50,4 +50,4 @@ inputs.forEach((input) => {
  
  
 // console.log(ans)
-    // form.reset()
+    // 
