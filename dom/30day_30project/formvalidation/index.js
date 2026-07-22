@@ -1,5 +1,5 @@
 
-
+let array =  JSON.parse(localStorage.getItem("users")) || [];;
 let input = document.querySelectorAll("input");
 let small = document.querySelectorAll("small")
 let btn = document.querySelector("button");
@@ -10,7 +10,7 @@ console.log("hello")
 console.log(small)
 btn.addEventListener("click", (event) => {
     let isValid = true;
-    event.preventDefault(); 
+    // event.preventDefault(); 
     input.forEach((ele,index) => {
         console.log(ele.id);
 // console.log(ele.value);
@@ -58,8 +58,22 @@ else if (ele.id === 'password'){
      
      });
     if (isValid === true) {
-        small[4].innerText = `for submitted succesfully`
+        let user = {
+            username : ` ${input[0].value}`,
+            gmail: `${input[1].value}`,
+            password : `${input[2].value}`,
+            mobile : `${input[3].value}`
+        }
+        array.push(user)
+        // JSON.stringify() ka sirf ek hi kaam hai:
+// JavaScript Object ya Array ko String me convert karna.
+        localStorage.setItem("users",JSON.stringify(user)); // localStorage.setItem() → browser ke local storage me data save karta hai magar Browser direct object save nahi kar sakta, isliye: apna JSON.stringify(user)
+// object ko string me convert karta hai:  JSON.stringify(user)
+        // wwalla dekhna ok 
+        // console.log(array);
+        small[4].innerText = `for submitted succesfully `
         small[4].style.color = ' green'
+        isValid = false;
     }
     // console.log("hello");
 });
