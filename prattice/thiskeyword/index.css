@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.form-box {
+  width: 420px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+}
+.form-box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+}
+.form-box input::-moz-placeholder {
+  color: #888;
+}
+.form-box input::placeholder {
+  color: #888;
+}
+.form-box input:focus {
+  border-color: #fff;
+}
+.form-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.form-box button:hover {
+  background: #ddd;
+}
+
+.users {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 280px;
+  height: 400px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #fff;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .info {
+  bottom: -30%;
+}
+.card:hover .info {
+  transition: all ease 3s;
+  position: absolute;
+  bottom: 0%;
+  padding: 15px;
+  background: #000;
+}
+.card:hover .info h2 {
+  margin-bottom: 10px;
+}
+.card:hover .info p {
+  color: #bbb;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.card:hover .info span {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}/*# sourceMappingURL=index.css.map */

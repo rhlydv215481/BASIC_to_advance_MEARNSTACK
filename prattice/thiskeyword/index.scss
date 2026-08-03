@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.form-box {
+    width: 420px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 25px;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        background: #1a1a1a;
+        color: #fff;
+        border: 1px solid #444;
+        border-radius: 8px;
+        outline: none;
+
+        &::placeholder {
+            color: #888;
+        }
+
+        &:focus {
+            border-color: #fff;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: white;
+        color: black;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: .3s;
+
+        &:hover {
+            background: #ddd;
+        }
+    }
+}
+
+.users {
+    width: 100%;
+    max-width: 1000px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 280px;
+    height: 400px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+
+    position: relative;
+    &:hover {
+        transform: translateY(-5px);
+        border-color: #fff;
+        
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        // height: 220px;
+        object-fit: cover;
+    }
+    .info{
+        bottom: -30%;
+    }
+  &:hover  .info {
+    // transform: ;
+    transition: all ease 3s;
+        position: absolute;
+        bottom: 0%;
+        padding: 15px;
+        background: #000;
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #bbb;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        span {
+            display: inline-block;
+            padding: 6px 12px;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+    }
+}
