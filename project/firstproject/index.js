@@ -148,6 +148,9 @@ function deleted() {
 
    });
 }
+console.log(
+    "hello"
+)
 //    console.log(task) 
 
 // deleted();
