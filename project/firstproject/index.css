@@ -1,0 +1,343 @@
+:root {
+  --Background: #050505;
+  --green: #22C55E;
+  --green-light: #4ADE80;
+  --brown:#d38c12 ;
+  --darkbrown: #412D15;
+  --Text: #F9FAFB;
+}
+
+* {
+  color: var(--Text);
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* font-size: 40px; */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: var(--Background);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+main .allelemet {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+main .allelemet .elem {
+  transition: all ease 0.5s;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  color: var(--Text);
+  padding: 0.4rem 0.2rem;
+}
+main .allelemet .elem img {
+  border-radius: 2rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .allelemet .elem h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 5%;
+  background: transparent;
+  right: 5%;
+}
+main .allelemet .elem:active {
+  scale: 0.97;
+}
+main .fullelemt {
+  height: 100vh;
+  width: 100%;
+  background: var(--darkbrown);
+  padding: 0rem 1rem;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+main .fullelemt .info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 1rem;
+  height: 4rem;
+  justify-content: space-around;
+  gap: 2rem;
+}
+main .fullelemt .info .button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.3rem;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .fullelemt .info .button:hover, main .fullelemt .info .button:active {
+  outline: 0;
+}
+main .fullelemt .info .button span {
+  background-color: rgb(5, 6, 45);
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+main .fullelemt .info .button:hover span {
+  background: none;
+}
+main .fullelemt .info .button:active {
+  transform: scale(0.9);
+}
+main .fullelemt .todocontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--Text);
+}
+main .fullelemt .todocontainer .addtask {
+  background: var(--brown);
+  width: 100%;
+  min-height: 60vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+}
+main .fullelemt .todocontainer .addtask img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main .fullelemt .todocontainer .addtask form {
+  margin: 1rem;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .fullelemt .todocontainer .addtask form input[type=text] {
+  width: 100%;
+  height: 3rem;
+  background: var(--darkbrown);
+  color: var(--Text);
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+main .fullelemt .todocontainer .addtask form #detail {
+  height: 8rem;
+}
+main .fullelemt .todocontainer .addtask form .important {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  align-items: center;
+}
+main .fullelemt .todocontainer .addtask form .important input[type=checkbox] {
+  width: 3rem;
+  height: 2rem;
+}
+main .fullelemt .todocontainer .addtask form button {
+  width: 5rem;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.3rem;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .fullelemt .todocontainer .addtask form button:hover, main .fullelemt .todocontainer .addtask form button:active {
+  outline: 0;
+}
+main .fullelemt .todocontainer .addtask form button span {
+  background-color: rgb(5, 6, 45);
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+main .fullelemt .todocontainer .addtask form button:hover span {
+  background: none;
+}
+main .fullelemt .todocontainer .addtask form button:active {
+  transform: scale(0.9);
+}
+main .fullelemt .todocontainer .alltask {
+  background: var(--brown);
+  width: 100%;
+  max-height: auto;
+  overflow-y: auto;
+  border-radius: 1rem;
+}
+main .fullelemt .todocontainer .alltask .task {
+  overflow-y: auto;
+  background: var(--Text);
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  min-height: 4rem;
+  position: relative;
+  padding: 0rem 1rem;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+}
+main .fullelemt .todocontainer .alltask .task h1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  font-size: 2rem;
+  color: var(--Background);
+}
+main .fullelemt .todocontainer .alltask .task h3 {
+  position: absolute;
+  left: 30%;
+  background: red;
+  font-size: 1rem;
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+main .fullelemt .todocontainer .alltask .task button {
+  max-height: 2rem;
+  flex-shrink: 0;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.3rem;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .fullelemt .todocontainer .alltask .task button:hover, main .fullelemt .todocontainer .alltask .task button:active {
+  outline: 0;
+}
+main .fullelemt .todocontainer .alltask .task button span {
+  background-color: rgb(5, 6, 45);
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+main .fullelemt .todocontainer .alltask .task button:hover span {
+  background: none;
+}
+main .fullelemt .todocontainer .alltask .task button:active {
+  transform: scale(0.9);
+}
+main .fullelemt .todocontainer .alltask .detailtab {
+  display: none;
+  background: #000;
+  width: calc(100% - 2rem);
+  height: 5rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+main .fullelemt .todocontainer .alltask .detailtab h3 {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  main .allelemet {
+    display: flex;
+    gap: 0.5rem;
+  }
+  main .fullelemt .info {
+    height: 4rem;
+  }
+  main .fullelemt .todocontainer {
+    height: calc(100% - 2rem);
+    display: flex;
+    flex-direction: row;
+  }
+  main .fullelemt .todocontainer .addtask {
+    width: 30%;
+    height: calc(100% - 5rem);
+  }
+  main .fullelemt .todocontainer .addtask form {
+    overflow-y: auto;
+    height: 75vh;
+  }
+  main .fullelemt .todocontainer .addtask form .important {
+    font-size: 1.5rem;
+  }
+  main .fullelemt .todocontainer .addtask form .important input[type=checkbox] {
+    width: 2rem;
+    height: 1.5rem;
+  }
+  main .fullelemt .todocontainer .alltask {
+    height: calc(100% - 5rem);
+  }
+}/*# sourceMappingURL=index.css.map */

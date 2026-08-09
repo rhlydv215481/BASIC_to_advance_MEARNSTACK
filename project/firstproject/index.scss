@@ -1,0 +1,334 @@
+:root{
+    --Background: #050505;
+     --green: #22C55E;
+    --green-light: #4ADE80;
+    --brown:#d38c12 ;
+    --darkbrown: #412D15;
+--Text: #F9FAFB;
+
+}
+@mixin gradientButton {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.3rem;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+
+  span {
+    background-color: rgb(5, 6, 45);
+    padding: 2rem 2.5rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  &:hover span {
+    background: none;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+*{
+    color: var(--Text);
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    // font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 40px; */
+    //  font-family: "Boldonse", system-ui; bpld
+// font-family: "Niconne", cursive;  ye cursive hai 
+// font-family: "Roboto", sans-serif; 
+// regular
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+//   background: var(--Background);
+}
+
+html,body{
+ height: 100%;
+ width: 100%; 
+ background: var(--Background);
+// font-family: "Libre Baskerville", serif; /curasive
+//  font-family: "Roboto", sans-serif; /reular
+// font-family: "Boldonse", system-ui;  /bold
+}
+main{
+    height: 100%;
+    width: 100%;
+    .allelemet{
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+      
+        .elem{
+            transition: all ease 0.5s;
+            position: relative;
+            height: 50%;
+            width: 100%;
+            color: var(--Text);
+            // background: red;
+            padding: 0.4rem 0.2rem;
+            
+            img{
+                border-radius: 2rem;
+                position: relative;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            h1{
+                // color: azure;
+                font-family: "Libre Baskerville", serif;
+                font-weight: 400;
+                font-size: 2.5rem;
+                position: absolute;
+                bottom: 5%;
+                background: transparent;
+                right: 5%;
+            
+            // background: yellowgreen;
+        }
+    }
+    .elem:active{
+        scale: 0.97;
+    }
+    // background: yellow;
+    }
+    .fullelemt{
+        height: 100vh;
+        width: 100%;
+        background: var(--darkbrown);
+       padding: 0rem 1rem;
+        display: none;
+        position: fixed;
+        inset: 0;
+        // display: flex;
+        .info{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 1.3rem;
+            margin:  1rem;
+            height: 4rem;
+            // font-size: 2rem;
+            justify-content: space-around;
+            gap: 2rem;
+           
+         .button{
+            @include gradientButton();
+         }
+
+                
+            }  
+            .todocontainer{
+                // margin: 1rem;
+                // background: var(--brown);
+                width: 100%;
+                height: 100vh;
+                // height: auto;
+                display: flex;
+                // align-items: left;
+                // justify-content: end;
+                flex-direction: column;
+                gap: 1.5rem;
+                color: var(--Text);
+                .addtask{
+                    background: var(--brown);
+                    width: 100%;
+                    min-height: 60vh;
+                    overflow-y: auto;
+                    border-radius: 1rem;
+                    img{
+                        // height: 5rem;
+                        object-fit: cover;
+                        border-radius: 1rem;
+                    }
+                   
+                    form{
+                        margin: 1rem;
+                        display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        input[type="text"]{
+                            width: 100%;
+                            height: 3rem;
+                            background: var(--darkbrown);
+                            color: var(--Text);
+                            font-size: 2rem;
+                            padding: 0.5rem ;
+                        }
+                       
+                        #detail{
+                            height: 8rem;
+                        }
+                        .important{
+                            // background: #000;
+                            font-size: 2rem;
+                            display: flex;
+                            justify-content: space-around;
+                            font-weight: 600;
+                            align-items: center;
+                            input[type="checkbox"]{
+                                 width: 3rem;
+    height: 2rem;
+                                
+                            }
+                        }
+                        button{  
+                            width: 5rem;
+                            @include gradientButton();
+                        }
+                        
+                    }
+                }
+                .alltask{
+                     background: var(--brown);
+                    width: 100%;
+               max-height: auto;
+               
+                    overflow-y: auto;
+                    border-radius: 1rem;
+                    
+                    .task{
+                        overflow-y: auto;
+                        background: var(--Text);
+                        display: block;
+                       width: calc(100% - 2rem); // marzine dena hai tho ye use karan ab se 
+                        margin: 1rem;
+                       min-height:  4rem;
+                        // height: 4rem;
+                        position: relative;
+                       padding: 0rem 1rem;
+                        font-family: "Libre Baskerville", serif;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+                        border-radius: 0.5rem;
+                        
+                        h1{
+                            // text-decoration: line-through;
+                            flex: 1;
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                        // margin: ;
+                        line-height: normal;
+                             font-size: 2rem;
+                            color: var(--Background);
+                        }
+                        h3{
+                            position: absolute;
+                            left: 30%;
+                            background: red;
+                            font-size: 1rem;
+                            padding: 0.3rem;
+                            border-radius: 1rem;
+                        }
+                        button{
+                            
+                            max-height: 2rem;
+                          flex-shrink: 0;
+                            @include gradientButton();
+                        }
+                    }
+                     .detailtab{
+                        display: none;
+                            background: #000;
+                            // color: #00ddeb;
+                            width: calc(100% - 2rem);
+                            height: 5rem;
+                             margin: 1rem ;
+                             border-radius: 2rem;
+                            //  font-size: 1.5rem;
+                            h3{
+                                font-size: 2rem;
+                                padding: 0.5rem 1rem;
+                            }
+                             }
+                        }
+                    
+                }
+            } 
+    }
+
+@media (min-width: 1024px) {
+    main{
+        .allelemet{
+            display: flex;
+            gap: 0.5rem;
+            // min-height: 900px;
+        }
+        .fullelemt{
+            // background: red;
+            // display: flex;
+            // flex-direction: row;
+            .info{
+                // background: #000;
+                height: 4rem;
+            }
+            .todocontainer{
+
+                height:calc(100% - 2rem) ;
+                display: flex;
+                flex-direction: row;
+                // background: #000;
+                .addtask{
+                  
+                    width: 30%;
+                     height: calc(100% - 5rem);
+                    //  padding: 2rem 0rem;
+                     form{
+                      
+                        overflow-y: auto;
+                        height: 75vh;
+                            .important{
+                            // background: #000;
+                            font-size: 1.5rem;
+                            input[type="checkbox"]{
+                                 width: 2rem;
+    height: 1.5rem;
+                                
+                            }
+                        }
+                     }
+                }
+                .alltask{
+                    height: calc(100% - 5rem);
+                }
+            }
+
+        }
+    }
+  
+}
