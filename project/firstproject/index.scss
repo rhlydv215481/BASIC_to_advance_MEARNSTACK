@@ -84,7 +84,7 @@ main{
         height: 100%;
         width: 100%;
         padding: 1rem;
-      
+    //   display: none;
         .elem{
             transition: all ease 0.5s;
             position: relative;
@@ -123,12 +123,26 @@ main{
     .fullelemt{
         height: 100vh;
         width: 100%;
-        background: var(--darkbrown);
+        // background: var(--darkbrown);
+         background:
+    radial-gradient(
+        circle at 10% 0%,
+        #5a3b1b 0%,
+        transparent 35%
+    ),
+    radial-gradient(
+        circle at 90% 100%,
+        #3b260f 0%,
+        transparent 35%
+    ),
+    #120d08;
        padding: 0rem 1rem;
         display: none;
         position: fixed;
         inset: 0;
+          overflow-y: auto;
         // display: flex;
+      
         .info{
             
             display: flex;
@@ -160,7 +174,14 @@ main{
                 gap: 1.5rem;
                 color: var(--Text);
                 .addtask{
-                    background: var(--brown);
+                    // background: var(--brown);
+        background:
+    radial-gradient(circle at 20% 30%, #412D15 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, #a66a0f 0%, transparent 30%),
+    radial-gradient(circle at 50% 100%, #412D15 0%, transparent 25%),
+    #030605;
+   
+     
                     width: 100%;
                     min-height: 60vh;
                     overflow-y: auto;
@@ -212,7 +233,31 @@ main{
                     }
                 }
                 .alltask{
-                     background: var(--brown);
+                    //  background: var(--brown);
+   background:
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(34, 197, 94, 0.25),
+        transparent 28%
+    ),
+    linear-gradient(
+        115deg,
+        transparent 20%,
+        rgba(20, 83, 45, 0.35) 45%,
+        transparent 70%
+    ),
+    radial-gradient(
+        ellipse at 85% 80%,
+        rgba(16, 185, 129, 0.18),
+        transparent 35%
+    ),
+    conic-gradient(
+        from 220deg at 50% 50%,
+        #020403,
+        #07150e,
+        #0b2418,
+        #020403
+    );
                     width: 100%;
                max-height: auto;
                
@@ -221,6 +266,8 @@ main{
                     
                     .task{
                         overflow-y: auto;
+                    // color: #16402c;
+                    // color: #412D15;
                         background: var(--Text);
                         display: block;
                        width: calc(100% - 2rem); // marzine dena hai tho ye use karan ab se 
@@ -264,7 +311,11 @@ main{
                     }
                      .detailtab{
                         display: none;
-                            background: #000;
+                         background:
+    radial-gradient(circle at 20% 30%, #412D15 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, #a66a0f 0%, transparent 30%),
+    radial-gradient(circle at 50% 100%, #412D15 0%, transparent 25%),
+    #030605;
                             // color: #00ddeb;
                             width: calc(100% - 2rem);
                             height: 5rem;
@@ -279,6 +330,66 @@ main{
                         }
                     
                 }
+.dailytask{
+    // margin: 2.7rem auto;
+ overflow-y: auto;
+  
+    display: block;
+             width: 100%;
+                height: 100%;
+                // background: red;
+                // height: auto;
+                display: flex;
+                // align-items: left;
+                // justify-content: end;
+                flex-direction: column;
+                // gap: 1.5rem;
+                color: var(--Text);
+                // padding: 5rem;
+                align-items: center;
+                .time{
+                    margin: 1rem 0rem;
+                   height: 3rem;
+                  
+    color: #F5F5F0;
+                    width: calc(100% - 1rem);
+                    border-radius: 0.8rem;
+                    border: #ffffff solid 2px;
+                    display: flex;
+                   
+                    gap: 1rem;
+                    font-size: 2rem;
+                    padding: 0rem 0.7rem; 
+                    p{
+                            margin: 0;
+   flex-shrink: 0;
+                    }
+                   input{
+                        height: 100%;
+                    font-size: 1.5rem;
+ background: linear-gradient(
+        135deg,
+        #412D15,
+        #704b18, 
+        #a66a0f
+    );
+       min-width: 0;
+    color: #F9FAFB;
+    flex-grow: 1;
+                           border-radius: 0.8rem;
+                           border: transparent;
+                    }
+                }
+               
+}
+              #todayplane{
+                margin: 2rem;
+                    width: 2rem;
+                    // text-align: right;
+                    // height: 50%;
+                    @include gradientButton();
+                }  
+
             } 
     }
 
@@ -290,6 +401,11 @@ main{
             // min-height: 900px;
         }
         .fullelemt{
+            height: auto;
+            &::-webkit-scrollbar{
+            display: none;
+        }
+            // overflow: hidden;
             // background: red;
             // display: flex;
             // flex-direction: row;
@@ -327,8 +443,29 @@ main{
                     height: calc(100% - 5rem);
                 }
             }
+//      .dailytask{
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1rem;
+//     width: 100%;
+// }
+.dailytask{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 150vh;
+    .time{
+    width: calc(50% - 0.5rem);
+    // box-sizing: border-box;
+}
+}
 
+
+// .time{
+//     width: calc(50% - 0.5rem);
+//     box-sizing: border-box;
+// }
+}
         }
     }
   
-}

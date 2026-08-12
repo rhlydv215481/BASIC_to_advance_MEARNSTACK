@@ -66,11 +66,12 @@ main .allelemet .elem:active {
 main .fullelemt {
   height: 100vh;
   width: 100%;
-  background: var(--darkbrown);
+  background: radial-gradient(circle at 10% 0%, #5a3b1b 0%, transparent 35%), radial-gradient(circle at 90% 100%, #3b260f 0%, transparent 35%), #120d08;
   padding: 0rem 1rem;
   display: none;
   position: fixed;
   inset: 0;
+  overflow-y: auto;
 }
 main .fullelemt .info {
   display: flex;
@@ -132,7 +133,7 @@ main .fullelemt .todocontainer {
   color: var(--Text);
 }
 main .fullelemt .todocontainer .addtask {
-  background: var(--brown);
+  background: radial-gradient(circle at 20% 30%, #412D15 0%, transparent 25%), radial-gradient(circle at 80% 70%, #a66a0f 0%, transparent 30%), radial-gradient(circle at 50% 100%, #412D15 0%, transparent 25%), #030605;
   width: 100%;
   min-height: 60vh;
   overflow-y: auto;
@@ -215,7 +216,7 @@ main .fullelemt .todocontainer .addtask form button:active {
   transform: scale(0.9);
 }
 main .fullelemt .todocontainer .alltask {
-  background: var(--brown);
+  background: radial-gradient(circle at 15% 20%, rgba(34, 197, 94, 0.25), transparent 28%), linear-gradient(115deg, transparent 20%, rgba(20, 83, 45, 0.35) 45%, transparent 70%), radial-gradient(ellipse at 85% 80%, rgba(16, 185, 129, 0.18), transparent 35%), conic-gradient(from 220deg at 50% 50%, #020403, #07150e, #0b2418, #020403);
   width: 100%;
   max-height: auto;
   overflow-y: auto;
@@ -298,7 +299,7 @@ main .fullelemt .todocontainer .alltask .task button:active {
 }
 main .fullelemt .todocontainer .alltask .detailtab {
   display: none;
-  background: #000;
+  background: radial-gradient(circle at 20% 30%, #412D15 0%, transparent 25%), radial-gradient(circle at 80% 70%, #a66a0f 0%, transparent 30%), radial-gradient(circle at 50% 100%, #412D15 0%, transparent 25%), #030605;
   width: calc(100% - 2rem);
   height: 5rem;
   margin: 1rem;
@@ -308,11 +309,96 @@ main .fullelemt .todocontainer .alltask .detailtab h3 {
   font-size: 2rem;
   padding: 0.5rem 1rem;
 }
+main .fullelemt .dailytask {
+  overflow-y: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--Text);
+  align-items: center;
+}
+main .fullelemt .dailytask .time {
+  margin: 1rem 0rem;
+  height: 3rem;
+  color: #F5F5F0;
+  width: calc(100% - 1rem);
+  border-radius: 0.8rem;
+  border: #ffffff solid 2px;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  padding: 0rem 0.7rem;
+}
+main .fullelemt .dailytask .time p {
+  margin: 0;
+  flex-shrink: 0;
+}
+main .fullelemt .dailytask .time input {
+  height: 100%;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #412D15, #704b18, #a66a0f);
+  min-width: 0;
+  color: #F9FAFB;
+  flex-grow: 1;
+  border-radius: 0.8rem;
+  border: transparent;
+}
+main .fullelemt #todayplane {
+  margin: 2rem;
+  width: 2rem;
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 0.3rem;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .fullelemt #todayplane:hover, main .fullelemt #todayplane:active {
+  outline: 0;
+}
+main .fullelemt #todayplane span {
+  background-color: rgb(5, 6, 45);
+  padding: 2rem 2.5rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+main .fullelemt #todayplane:hover span {
+  background: none;
+}
+main .fullelemt #todayplane:active {
+  transform: scale(0.9);
+}
 
 @media (min-width: 1024px) {
   main .allelemet {
     display: flex;
     gap: 0.5rem;
+  }
+  main .fullelemt {
+    height: auto;
+  }
+  main .fullelemt::-webkit-scrollbar {
+    display: none;
   }
   main .fullelemt .info {
     height: 4rem;
@@ -339,5 +425,14 @@ main .fullelemt .todocontainer .alltask .detailtab h3 {
   }
   main .fullelemt .todocontainer .alltask {
     height: calc(100% - 5rem);
+  }
+  main .fullelemt .dailytask {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 150vh;
+  }
+  main .fullelemt .dailytask .time {
+    width: calc(50% - 0.5rem);
   }
 }/*# sourceMappingURL=index.css.map */
